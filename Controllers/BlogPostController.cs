@@ -39,6 +39,7 @@ namespace BlogApi.Controllers
 
             return blogPost;
         }
+
         [HttpGet("author/{name}")]
         public ActionResult<List<BlogPost>> GetBlogPostFromAuthor(string name)
         {
