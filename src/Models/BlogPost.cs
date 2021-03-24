@@ -19,5 +19,15 @@ namespace BlogApi.Models
         public string CreationDate { get; set; }
         public string UpdateDate { get; set; }
         public string Author { get; set; }
+
+        public BlogPost(string id, string title, string article, string creationDate, string updateDate, string author)
+        {
+            _id = id;
+            Title = title;
+            Article = article;
+            CreationDate = creationDate;
+            UpdateDate = updateDate;
+            Author = author;
+        }
     }
 }

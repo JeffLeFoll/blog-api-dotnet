@@ -12,9 +12,9 @@ namespace BlogApi.Controllers
     [ApiController]
     public class PingController : ControllerBase
     {
-        private readonly ILogger<BlogPostController> _logger;
+        private readonly ILogger<PingController> _logger;
 
-        public PingController(ILogger<BlogPostController> logger)
+        public PingController(ILogger<PingController> logger)
         {
             _logger = logger;
         }
