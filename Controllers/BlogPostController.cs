@@ -15,9 +15,9 @@ namespace BlogApi.Controllers
     public class BlogPostController : ControllerBase
     {
         private readonly ILogger<BlogPostController> _logger;
-        private readonly BlogPostRepositoryMongo _blogPostRepository;
+        private readonly BlogPostRepository _blogPostRepository;
 
-        public BlogPostController(ILogger<BlogPostController> logger, BlogPostRepositoryMongo blogPostRepository)
+        public BlogPostController(ILogger<BlogPostController> logger, BlogPostRepository blogPostRepository)
         {
             _logger = logger;
             _blogPostRepository = blogPostRepository;
